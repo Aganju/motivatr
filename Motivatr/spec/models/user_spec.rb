@@ -10,4 +10,7 @@ RSpec.describe User, type: :model do
   it { should validate_presence_of(:password_digest) }
   it { should validate_length_of(:password) }
 
+  it { should have_many(:comments)}
+  it { should have_many(:goals)}
+
 end
